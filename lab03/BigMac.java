@@ -9,7 +9,8 @@ public class BigMac {
    //main method
    public static void main(String[] args) {
        Scanner myScanner;
-       myScanner = new Scanner( System.in );
+       myScanner = new Scanner( System.in );//this new Scanner is fixed it means
+       ////////////////////////////////////that you will take the input from the command line
        System.out.print("Enter the number of Big Macs(An integer > 0): ");
        //using the command print, one is able to put the cursors in different place than w/ println
        //this is to prompt the user to type in the data
@@ -30,11 +31,12 @@ public class BigMac {
         //int(6.73 * 10) % 10 -> 67 % 10 -> 7
         //where the %  (mod) operator returns the remainder
         //after the division: 583% 100 -> 83, 27%5 -> 2
-        dimes=(int)(cost$*10)%10;
+        dimes=(int)(cost$*10)%10;//% is used when you want to get the remainder of it
         pennies=(int)(cost$*100)%10;
         System.out.println("The total cost of " + nBigMacs+ " BigMacs, at $"+bigMac$ +" per bigMac, with a" +
         " sales tax of "+ (int)(taxRate*100) + "%, is $" +dollars+'.'+dimes+pennies);
-        
+        // if you type in System.out.println(1+2) you get 3
+        // if you type in System.out.println("1"+"2") you get 12
     
     
     
