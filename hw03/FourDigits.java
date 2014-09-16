@@ -17,7 +17,7 @@ public class FourDigits {
         double output2 = output1*10000;
         int output3 = (int) output2;
         
-        System.out.println("The four digits are "+output3+". Add zeros in front of the number if less than three digits are shown.");
+        System.out.println("The four digits are "+output3+". Add zeros in front of the number if less than four digits are shown.");
         
         
         
