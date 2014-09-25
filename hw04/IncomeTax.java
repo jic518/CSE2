@@ -1,4 +1,5 @@
 //This program will calculate the how much the income tax is
+//first import the java scanner
 import java.util.Scanner;
 
 public class IncomeTax {
@@ -7,7 +8,7 @@ public class IncomeTax {
         myScanner = new Scanner(System.in);
         System.out.print("Please enter an int giving the number of thousands: ");
         int Income = myScanner.nextInt();
-        double TaxRate, Tax, incomeTax, realIncome, TaxRateinPercent;
+        double TaxRate, Tax, incomeTax, realIncome, TaxRateinPercent; //define all the variables that are in a function
         if (Income < 0) {
             System.out.println("You did not enter a positive integer");
             return;// simple error message
@@ -41,7 +42,9 @@ public class IncomeTax {
             incomeTax = realIncome * TaxRate;
             System.out.println("The tax rate on $"+realIncome+" is "+TaxRateinPercent+"%"+", and the tax is $"+incomeTax);
         }
-        
+        //these ifs will show the appropriate tax rate and income tax when it is given the number
+    // on this HW I forgot about the existence of hasNextInt
+
        
         
     }//end of main method

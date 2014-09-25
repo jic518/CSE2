@@ -1,4 +1,4 @@
-//This program will calculate the how much the income tax is
+//This program will calculate the how much days are in a month
 //Ji Ho Choi
 import java.util.Scanner;
 
@@ -13,6 +13,9 @@ public class Month {
             System.out.println("You did not enter int (1-12)");
             return;
         }//end of if statement
+        if (inputmonth >= 0) {
+            System.out.println("You did not enter int (1-12)");
+        }
         if (inputmonth == 1 || inputmonth == 3 || inputmonth == 5 || inputmonth == 7
             || inputmonth == 8 || inputmonth == 10 || inputmonth ==12) {
                 Days = 31;
