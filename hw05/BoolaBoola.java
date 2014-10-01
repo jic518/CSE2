@@ -82,25 +82,15 @@ public class BoolaBoola {
             default: UltimateAns = "f";
             break;
         }
+
         System.out.print("Does "+Question+" have the value True or False?(t/f) - ");
         String Answer = myScanner.nextLine();
-        if (UltimateAns == "t") {
-            if (Answer == "t") {
-                
-               System.out.println("Correct");
-            }
-            else {
-                System.out.println("Wrong; try again");
-            }
+        
+        if(UltimateAns.equals(Answer)) {
+            System.out.println("Correct");
         }
-        else if (UltimateAns == "f") {
-            if (Answer == "f") {
-                
-               System.out.println("Correct");
-            }
-            else {
-                System.out.println("Wrong; try again");
-            }
+        else {
+            System.out.println("incorrect");
         }
         
         
