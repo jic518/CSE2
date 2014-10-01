@@ -1,4 +1,5 @@
-//
+//This program will generate a random problem for the user and will prompt the user to answer a question.
+//if the user enters a wrong input, they will be notified and vice versa.
 import java.util.Scanner;
 
 public class BoolaBoola {
@@ -92,7 +93,7 @@ public class BoolaBoola {
         else {
             System.out.println("incorrect");
         }
-        
+        // correct or incorrect?
         
         
         
