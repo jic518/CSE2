@@ -35,10 +35,10 @@ public class Enigma1{
  *        acceptable input don't produce the correct answer?
  * there was a problem in main method so I added s after arg
  * 
- * 
+ * logic error
  * 
  */
- //there was a problem in main method so I added s after arg
+
  //the program will not calculate the proportion if the number is not in the if
  //statement.
  

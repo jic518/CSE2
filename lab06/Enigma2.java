@@ -15,7 +15,7 @@ public class Enigma2{
 /*
  * Error Report: Explain how you can use the java.lang exception to
  *     identify the runtime error in the above code
- * added s after arg
+
  * denominator of zero
  * 
  * 

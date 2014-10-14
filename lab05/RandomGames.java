@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class RandomGames {
    public static void main(String[] args) {
        //First I need to generate a number
-       int Roulette = (int)(1+Math.random() * 40);
+       int Roulette = (int)(1+Math.random() * 38);
        Scanner myScanner = new Scanner(System.in);
        System.out.print("Enter R or r for roulette, C or c for craps, P or p for pick a card: ");
        
@@ -16,7 +16,7 @@ public class RandomGames {
                    break;
                    case 2: System.out.println("0");
                    break;
-                   default: System.out.println(RResult-4);
+                   default: System.out.println(RResult-2);
                    break;
                }//end of switch
            }//end of Roulette
