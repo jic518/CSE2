@@ -26,6 +26,10 @@ public class Roulette {
             
         
         
+        
+        
+        
+        }//this is a while statement that will simulate the Roulette for 1000 times
         if (NumMatchesHun >= 3) {
             NumoftimesProfit++;
             NumMatchesHun = 0;
@@ -35,8 +39,6 @@ public class Roulette {
             LossProfit++;
             NumMatchesHun = 0;
         }
-        
-        }//this is a while statement that will simulate the Roulette for 1000 times
         
        
         SimHund = 0;
