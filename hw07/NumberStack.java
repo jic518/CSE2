@@ -30,6 +30,40 @@ public class NumberStack {
                         }
                         System.out.println("");
                     }
+
+
+                    /////Start of while loops
+                    System.out.println("Using while loops: ");
+
+                    int d = 1;
+                    int e = 1;
+                    int f = 1;
+                    int g = 1;
+                    while (d <= Input) {
+                        int increment2 = 2 * d - 1;
+                        while (e <= d) {
+                            while (f <= increment2) {
+                                
+                                System.out.print(d);
+                                f++;
+                            }
+                            
+                            f=0;
+                            System.out.println("");
+                            e++;
+                        }
+                        e=0;
+                        while (g <= increment2) {
+                            
+                            System.out.print("-");
+                            g++;
+                        }
+                        g=0;
+                        System.out.println("");
+                        d++;
+            
+                    }
+                    
                 } //end of if for the 1-9    
 
 
