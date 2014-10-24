@@ -52,15 +52,15 @@ public class NumberStack {
                             
                             System.out.println("");
                             e++;
-                            f=0;
+                            f=1;
                         }
-                        e=0;
+                        e=1;
                         while (g <= increment2) {
                             
                             System.out.print("-");
                             g++;
                         }
-                        g=0;
+                        g=1;
                         System.out.println("");
                         d++;
             
@@ -87,17 +87,17 @@ public class NumberStack {
                             
                             System.out.println("");
                             Last2++;
-                            Last3=0;
+                            Last3=1;
                         }
                         while (Last2 <= Last1);
-                        Last2=0;
+                        Last2=1;
                         do {
                             
                             System.out.print("-");
                             Last4++;
                         }
                         while (Last4 <= increment3);
-                        Last4=0;
+                        Last4=1;
                         System.out.println("");
                         Last1++;
             
