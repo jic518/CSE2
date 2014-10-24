@@ -74,6 +74,37 @@ public class NumberStack {
                     int Last3 = 1;
                     int Last4 = 1;
                     
+                    do {
+                        int increment3 = 2 * Last1 - 1;
+                        do {
+                            do {
+                                System.out.print(Last1);
+                                Last3++;
+    
+                            }
+                            while (Last3 <= increment3);
+                            
+                            
+                            System.out.println("");
+                            Last2++;
+                            Last3=0;
+                        }
+                        while (Last2 <= Last1);
+                        Last2=0;
+                        do {
+                            
+                            System.out.print("-");
+                            Last4++;
+                        }
+                        while (Last4 <= increment3);
+                        Last4=0;
+                        System.out.println("");
+                        Last1++;
+            
+                    }
+                    while (Last1 <= Input);
+                    
+                    
                 } //end of if for the 1-9    
 
 
