@@ -39,18 +39,20 @@ public class NumberStack {
                     int e = 1;
                     int f = 1;
                     int g = 1;
+                    
                     while (d <= Input) {
                         int increment2 = 2 * d - 1;
                         while (e <= d) {
                             while (f <= increment2) {
-                                
                                 System.out.print(d);
                                 f++;
+    
                             }
                             
-                            f=0;
+                            
                             System.out.println("");
                             e++;
+                            f=0;
                         }
                         e=0;
                         while (g <= increment2) {
@@ -63,6 +65,14 @@ public class NumberStack {
                         d++;
             
                     }
+                    
+                    ////////////Start of do while loops
+                    
+                    System.out.println("Using do while loops: ");
+                    int Last1 = 1;
+                    int Last2 = 1;
+                    int Last3 = 1;
+                    int Last4 = 1;
                     
                 } //end of if for the 1-9    
 
