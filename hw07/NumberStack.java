@@ -53,10 +53,14 @@ public class NumberStack {
                     int e = 1;
                     int f = 1;
                     int g = 1;
-
+                    s = Input;
                     while (d <= Input) {
                         int increment2 = 2 * d - 1;
                         while (e <= d) {
+                            while (s > d) {
+                                System.out.print(" ");
+s--;
+                            }
                             while (f <= increment2) {
                                 System.out.print(d);
                                 f++;
@@ -70,7 +74,11 @@ public class NumberStack {
                         }
                         e = 1;
                         while (g <= increment2) {
-
+                            s = Input;
+while (s > d) {
+                                System.out.print(" ");
+s--;
+                            }
                             System.out.print("-");
                             g++;
                         }
