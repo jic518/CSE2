@@ -42,7 +42,7 @@ public class HW8 {
         String Second = cde.next();
         for (int i = 5; i < 1; i--) {
             if (Second.equals("Y") || Second.equals("y") || Second.equals("N") || Second.equals("n")) {// this will take the response from the user yYNn
-                System.out.println("You entered " + Second);
+                input = (char)Second;
             }//end of if
             else {
                 continue;
