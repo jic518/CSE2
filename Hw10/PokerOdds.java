@@ -75,12 +75,12 @@ public class PokerOdds {
             
             for (int Verify = 0; Verify < 5; Verify++) {
                 for (int Verify2 = 0; Verify2 < 5; Verify2++) {//these two loops will allow for comparison
-                    if(Hand[Verify]==Hand[Verify2]){//if I nest another if statement like if(Verify!=Verify2) the
+                    if(Index( Verify, Verify2, Hand[Verify],Hand[Verify2])==true){//if I nest another if statement like if(Verify!=Verify2) the
                     //program wouldn't run the if statement also if(Hand[Verify]==Hand[Verify2] && Verify!=Verify2)
                     //did not work. But since the program will meet the requirements for if statement 50000 times I decided to divide
                     //the outcome by 5 which gave me 10,000, but if the program were to have a real pair inside it
                     //the counter will inevitably run 7 times
-                    //using method doesn't work
+                    //using method doesn't work//it works,but not as intended
                          switch (Hand[Verify]%13) {
                             case 0:
                                 nA++;
@@ -144,4 +144,14 @@ public class PokerOdds {
         int Sum = nA/12+nKing/12+nQueen/12+nJack/12+nTen/12+nNine/12+nEight/12+nSeven/12+nSix/12+nFive/12+nFour/12+nThree/12+nTwo/12;
         System.out.println("total not exactly one pair:   "+(10000-Sum));
     }//this will display the numbers
+    public static boolean Index(int Verify, int Verify2, int Hand, int Hand2){//method that will compare doesn't work if i set index = Verify!=Verify2
+        boolean index = Hand==Hand2;
+        if(index==true){
+            index = Verify==Verify2;
+        }
+        else{
+            index = false;
+        }
+        return index;
+    }
 }
