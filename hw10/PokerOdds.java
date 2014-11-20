@@ -79,7 +79,7 @@ public class PokerOdds {
                         Check++;
                     }
                 }
-            }
+            }//loop to check if there is only one pair
             if(Check==7){
             for (int Verify = 0; Verify < 5; Verify++) {
                 for (int Verify2 = 0; Verify2 < 5; Verify2++) {//these two loops will allow for comparison
