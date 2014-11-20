@@ -139,7 +139,7 @@ public class PokerOdds {
             Check =0;
         }
         System.out.println("Rank   Freq of exactly one pair");
-        System.out.println("A      "+nA/2);
+        System.out.println("A      "+nA/2);//since the counter will go up twice I must divide it by 2
         System.out.println("K      "+nKing/2);
         System.out.println("Q      "+nQueen/2);
         System.out.println("J      "+nJack/2);
