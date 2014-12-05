@@ -29,15 +29,49 @@ public class ArrayMath{
     }
     return out+"}";
   }
-}
+
 public static boolean equals(double[] Array1, double[] Array2) {
-    if(Arrays.equals(Array1, Array2)) {
-        return true;
+    boolean TorF=false;
+    int counter = 0;
+    if(Array1.length == Array2.length) {
+      for(int i=0; i<Array1.length;i++){
+        if(Array1[i] == Array2[i]) {
+          counter++;
+        }
+      }
+      if(counter==Array1.length) {
+        TorF = true;
+      }
+      else{
+        TorF = false;
+      }
+    }
+    else{
+      TorF = false;
+    }
+    return TorF;
+}
+public static double[] addArrays(double[] Array1, double[] Array2) {
+    double[] ArrayR;
+    if(Array1.length >= Array2.length){
+      ArrayR = new double[Array1.length];
+      for(int s=0; s<Array2.length; s++) {
+        ArrayR[s] = Array1[s] + Array2[s];
+      }
+      for(int t=Array2.length; t<Array1.length;t++){
+        ArrayR[t] = Array1[t];
+      }
     }
     else {
-        return false;
+      ArrayR = new double[Array2.length];
+      for(int j=0; j<Array1.length; j++) {
+        ArrayR[j] = Array1[j] + Array2[j];
+      }
+      for(int k=Array1.length; k<Array2.length;k++){
+        ArrayR[k] = Array2[k];
+      }
     }
-}
-public static  addArrays(double[] Array1, double[] Array2) {
+    return ArrayR;
     
+}
 }

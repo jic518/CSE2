@@ -45,7 +45,7 @@ public class Enigma3{
         n-=3;
         k-=5;
     }
-     out+=1/n + 1/k;   
+     out+=n + k; 
     System.out.println(out);
   }
 }
@@ -55,6 +55,6 @@ public class Enigma3{
  * added s after arg
  * 
  * 
- * 
+ * runtime error
  */
 
