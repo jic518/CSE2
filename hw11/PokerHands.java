@@ -3,6 +3,10 @@
 import java.util.Scanner;
 public class PokerHands {
     public static void main(String[] args) {
+        Scanner myScanner;
+        myScanner = new Scanner(System.in);
+        boolean Again = true;
+        while(Again = true){
         String suit;
         int[] hand = new int[5];
         hand[0]=100;
@@ -11,8 +15,7 @@ public class PokerHands {
         hand[3]=103;
         hand[4]=104;//dummy number
         int[] Sort = new int[5];
-        Scanner myScanner;
-        myScanner = new Scanner(System.in);
+        
         int Counter = 0;
         boolean Esc = false;
         boolean jump = false;//dummy boolean
@@ -113,6 +116,10 @@ public class PokerHands {
         SortSort(Sort);
         showOneHand(hand);//this function displays the hand
         HandRank(hand, Sort);//this function prints out the hand rank
+        System.out.print("Enter 'y' or 'Y' to enter a(nother) hand-");
+		String Y = myScanner.nextLine();
+		Again = (Y.equals("y")||Y.equals("Y"));
+        }
     }
     
     public static void showOneHand(int[] hand) {
