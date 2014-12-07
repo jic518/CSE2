@@ -212,8 +212,9 @@ public class PokerHands {
         if(sum==4){
             return true;
         }
+        
         if(sum==3){//in case A,2,3,4,5 it is a straight, but a, k, q,2,,3 is not a straight.
-            if(Sort[0]%13!=((Sort[4]%13)-4)){
+            if(Sort[0]==1||Sort[1]==1||Sort[2]==1||Sort[3]==1||Sort[4]==1){
                 return false;
             }
             else{
